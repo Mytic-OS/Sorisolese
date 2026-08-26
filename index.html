@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pol. Sorisolese Under 21 | Stagione 2026/27</title>
+
+    <link rel="stylesheet" href="style.css">
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="live-bar" id="liveBar">
+        <div class="live-content">
+            <span class="live-dot" id="liveDot"></span>
+            <span class="live-label" id="liveLabel">LIVE</span>
+            <span id="liveText">STATO SQUADRA IN AGGIORNAMENTO...</span>
+        </div>
+
+        <span class="live-time" id="currentTime"></span>
+    </div>
+
+
+    <header class="navbar">
+        <a href="#home" class="brand">
+            <img
+                src="https://b2-content.tuttocampo.it/Teams/40/1324093.png?v=2"
+                alt="Logo Sorisolese"
+                class="logo"
+            >
+
+            <div>
+                <strong>POL. SORISOLESE</strong>
+                <span>UNDER 21</span>
+            </div>
+        </a>
+
+        <button class="menu-button" id="menuButton">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="#home">HOME</a>
+            <a href="#squadra">ROSA</a>
+            <a href="#staff">STAFF</a>
+            <a href="#partite">PARTITE</a>
+            <a href="#classifica">CLASSIFICA</a>
+            <a href="#societa">SOCIETÀ</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="competition">
+                    CAMPIONATO UNDER 21 • GIRONE D
+                </p>
+
+                <h1>
+                    POLISPORTIVA
+                    <span>SORISOLESE</span>
+                </h1>
+
+                <p class="season">
+                    STAGIONE 2026 / 2027
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#partite" class="btn btn-primary">
+                        VEDI LE PARTITE
+                    </a>
+
+                    <a href="#squadra" class="btn btn-secondary">
+                        SCOPRI LA ROSA
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-logo-container">
+                <img
+                    src="https://b2-content.tuttocampo.it/Teams/40/1324093.png?v=2"
+                    alt="Polisportiva Sorisolese"
+                >
+            </div>
+
+        </section>
+
+
+
+        <section class="next-match-section">
+
+            <div class="section-title">
+                <p>PROSSIMO APPUNTAMENTO</p>
+                <h2>PROSSIMA PARTITA</h2>
+            </div>
+
+            <div class="next-match" id="nextMatch">
+
+                <div class="match-info">
+                    <span id="nextMatchDate">IN CARICAMENTO...</span>
+                    <strong id="nextMatchTime"></strong>
+                </div>
+
+                <div class="teams">
+
+                    <div class="team">
+                        <img id="homeLogo" src="" alt="">
+                        <h3 id="homeTeam">-</h3>
+                    </div>
+
+                    <div class="versus">
+                        <span>VS</span>
+
+                        <div class="countdown">
+                            <small>INIZIO TRA</small>
+                            <strong id="countdown">--d --h --m</strong>
+                        </div>
+                    </div>
+
+                    <div class="team">
+                        <img id="awayLogo" src="" alt="">
+                        <h3 id="awayTeam">-</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="stats-section">
+
+            <div class="stat-card">
+                <span id="playedGames">0</span>
+                <p>PARTITE GIOCATE</p>
+            </div>
+
+            <div class="stat-card">
+                <span id="wins">0</span>
+                <p>VITTORIE</p>
+            </div>
+
+            <div class="stat-card">
+                <span id="goalsFor">0</span>
+                <p>GOL SEGNATI</p>
+            </div>
+
+            <div class="stat-card">
+                <span id="points">0</span>
+                <p>PUNTI</p>
+            </div>
+
+        </section>
+
+
+
+        <section class="section squad-section" id="squadra">
+
+            <div class="section-title">
+                <p>STAGIONE 2026 / 2027</p>
+                <h2>LA NOSTRA ROSA</h2>
+            </div>
+
+            <div class="squad-filters">
+                <button class="active" data-role="all">
+                    TUTTI
+                </button>
+
+                <button data-role="Portiere">
+                    PORTIERI
+                </button>
+
+                <button data-role="Difensore">
+                    DIFENSORI
+                </button>
+
+                <button data-role="Centrocampista">
+                    CENTROCAMPISTI
+                </button>
+
+                <button data-role="Attaccante">
+                    ATTACCANTI
+                </button>
+            </div>
+
+            <div class="players-grid" id="playersGrid"></div>
+
+        </section>
+
+
+
+        <section class="section staff-section" id="staff">
+
+            <div class="section-title">
+                <p>DIETRO LA SQUADRA</p>
+                <h2>STAFF E SOCIETÀ</h2>
+            </div>
+
+            <div class="staff-grid" id="staffGrid"></div>
+
+        </section>
+
+
+        <section class="section matches-section" id="partite">
+
+            <div class="section-title">
+                <p>CAMPIONATO UNDER 21</p>
+                <h2>CALENDARIO E RISULTATI</h2>
+            </div>
+
+            <div class="match-filters">
+
+                <button class="active" data-filter="all">
+                    TUTTE
+                </button>
+
+                <button data-filter="upcoming">
+                    DA GIOCARE
+                </button>
+
+                <button data-filter="played">
+                    RISULTATI
+                </button>
+
+                <button data-filter="home">
+                    IN CASA
+                </button>
+
+                <button data-filter="away">
+                    IN TRASFERTA
+                </button>
+
+            </div>
+
+            <div class="matches-list" id="matchesList"></div>
+
+        </section>
+
+
+        <section class="section standings-section" id="classifica">
+
+            <div class="section-title">
+                <p>CAMPIONATO UNDER 21 • GIRONE D</p>
+                <h2>CLASSIFICA</h2>
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>SQUADRA</th>
+                            <th>PG</th>
+                            <th>V</th>
+                            <th>N</th>
+                            <th>P</th>
+                            <th>GF</th>
+                            <th>GS</th>
+                            <th>PT</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="standingsTable"></tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+       
+        <section class="section club-section" id="societa">
+
+            <div class="section-title">
+                <p>POLISPORTIVA SORISOLESE</p>
+                <h2>LA SOCIETÀ</h2>
+            </div>
+
+            <div class="club-grid">
+
+                <div class="club-card">
+          
+                    <h3>STADIO</h3>
+                    <p>
+                        Comunale di Sorisole<br>
+                        Via Roccoli, Sorisole
+                    </p>
+                </div>
+
+                <div class="club-card">   
+                    <h3>SEDE</h3>
+                    <p>
+                        Via San Carlo, 36<br>
+                        24010 Sorisole
+                    </p>
+                </div>
+
+                <div class="club-card">
+                    <h3>COLORI SOCIALI</h3>
+                    <p>Blu • Azzurro • Bianco</p>
+                </div>
+
+                <div class="club-card">
+                    
+                    <h3>TELEFONO</h3>
+                    <p>035 4125755</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <img
+            src="https://b2-content.tuttocampo.it/Teams/40/1324093.png?v=2"
+            alt="Logo Sorisolese"
+        >
+
+        <h2>POLISPORTIVA SORISOLESE</h2>
+
+        <p>
+            UNDER 21 • STAGIONE 2026 / 2027
+        </p>
+
+        <div class="footer-links">
+            <a href="https://www.polisportivasorisolese.it/"
+               target="_blank">
+                SITO UFFICIALE
+            </a>
+
+            <a href="https://www.facebook.com/polisportivasorisolese"
+               target="_blank">
+                FACEBOOK
+            </a>
+
+            <a href="https://www.instagram.com/pol.sorisolese/"
+               target="_blank">
+                INSTAGRAM
+            </a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Polisportiva Sorisolese Under 21
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
