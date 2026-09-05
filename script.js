@@ -266,24 +266,29 @@ const matches = [
 
 const players = [
 
-    { number: 1, name: "NOME PORTIERE", role: "Portiere" },
-    { number: 12, name: "NOME PORTIERE", role: "Portiere" },
+    { number: 1, name: "RIZZI ROBERTO", role: "Portiere" },
+    { number: 12, name: "ANTONACCI ALESSANDRO", role: "Portiere" },
 
-    { number: 2, name: "NOME DIFENSORE", role: "Difensore" },
-    { number: 3, name: "NOME DIFENSORE", role: "Difensore" },
-    { number: 4, name: "NOME DIFENSORE", role: "Difensore" },
-    { number: 5, name: "NOME DIFENSORE", role: "Difensore" },
-    { number: 13, name: "NOME DIFENSORE", role: "Difensore" },
+    { number: 2, name: "HYASE HANSON", role: "Difensore" },
+    { number: 3, name: "BIELLI FEDERICO", role: "Difensore" },
+    { number: 4, name: "MALASPINA BRUNO", role: "Difensore" },
+    { number: 5, name: "MORGANO MATTIA", role: "Difensore" },
+    { number: 13, name: "ROTA SAMUEL", role: "Difensore" },
+    { number: 16, name: "BAGGI THOMAS", role: "Difensore" },
 
-    { number: 6, name: "NOME CENTROCAMPISTA", role: "Centrocampista" },
-    { number: 7, name: "NOME CENTROCAMPISTA", role: "Centrocampista" },
-    { number: 8, name: "NOME CENTROCAMPISTA", role: "Centrocampista" },
-    { number: 14, name: "NOME CENTROCAMPISTA", role: "Centrocampista" },
-    { number: 15, name: "NOME CENTROCAMPISTA", role: "Centrocampista" },
+    { number: 6, name: "KONYA MARIO", role: "Centrocampista" },
+    { number: 7, name: "GASPARINI FILIPPO", role: "Centrocampista" },
+    { number: 8, name: "TRIOLO GIUSEPPE", role: "Centrocampista" },
+    { number: 14, name: "ZANOTTI CRISTIANO", role: "Centrocampista" },
+    { number: 15, name: "SPINI CESARE", role: "Centrocampista" },
+    { number: 17, name: "LOCARINI THOMAS", role: "Centrocampista" },
+    { number: 18, name: "CISANA", role: "Centrocampista" },
 
-    { number: 9, name: "NOME ATTACCANTE", role: "Attaccante" },
-    { number: 10, name: "NOME ATTACCANTE", role: "Attaccante" },
-    { number: 11, name: "NOME ATTACCANTE", role: "Attaccante" }
+    { number: 9, name: "CORTI ALBERTO", role: "Attaccante" },
+    { number: 10, name: "BOMBARDIERI ANDREA", role: "Attaccante" },
+    { number: 11, name: "CERUTI NICOLO'", role: "Attaccante" },
+    { number: 19, name: "BACUZZI MATTIA", role: "Attaccante" },
+    { number: 20, name: "BIELLI ALESSANDRO", role: "Attaccante" }
 
 ];
 
@@ -291,37 +296,43 @@ const staff = [
 
     {
         icon: "👔",
-        name: "NOME PRESIDENTE",
+        name: "GHILARDI LUIGI",
         role: "PRESIDENTE"
     },
 
     {
         icon: "📋",
-        name: "NOME DIRETTORE",
+        name: "ERCOLE BASCHENIS",
         role: "DIRETTORE SPORTIVO"
     },
 
     {
         icon: "⚽",
-        name: "NOME ALLENATORE",
+        name: "ESPOSITO FABIO",
         role: "ALLENATORE"
     },
 
     {
         icon: "🧠",
-        name: "NOME VICE",
+        name: "ROBERTO",
         role: "VICE ALLENATORE"
     },
 
     {
-        icon: "📊",
-        name: "NOME DIRIGENTE",
-        role: "DIRIGENTE"
+        icon: "⚽",
+        name: "REMO",
+        role: " 3° ALLENATORE"
+    },
+
+    {
+        icon: "⚽",
+        name: "ROBY",
+        role: "ALLENATORE PORTIERI"
     },
 
     {
         icon: "🏃",
-        name: "NOME PREPARATORE",
+        name: "MAURO",
         role: "PREPARATORE ATLETICO"
     }
 
